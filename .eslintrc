@@ -1,0 +1,54 @@
+{
+  "env": {
+    "jasmine": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "prettier",
+  ],
+  "rules": {
+    "prettier/prettier": ["error",
+  {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+    ],
+    "function-paren-newline": 0,
+    "import/default": 0,
+    "import/named": 0,
+    "import/no-extraneous-dependencies": [
+      2,
+      {
+        "devDependencies": [
+          "!(aws-sdk)"
+        ]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "no-plusplus": 0,
+    "require-jsdoc": [
+      "warn",
+      {
+        "require": {
+          "ClassDeclaration": true,
+          "FunctionDeclaration": true,
+          "FunctionExpression": true,
+          "MethodDefinition": true
+        }
+      }
+    ],
+    "valid-jsdoc": 1
+  }
+}
